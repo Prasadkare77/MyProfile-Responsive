@@ -1,60 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index</title>
-    <link
-      rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
-  </head>
 
-  <body>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Home</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">TECHNOLOGY STACK</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">EDUCATION</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">PROJECT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">PERSONAL</a>
-              </li>
-            </ul>
-            <!-- <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form> -->
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Index</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <!-- Font Awesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="container d-inline-block fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Home</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#techStackSection">TECHNOLOGY STACK</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#educationDetails">EDUCATION</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#projects">PROJECT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#personalInfo">PERSONAL</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container position-relative mt-5">
+    <div class="image d-inline-block">
+      <img src="assets/bill.png" alt="" width="150" height="150" class="rounded-bottom-circle mt-3 me-3">
     </div>
-  </body>
+    <div class="name d-inline-block mt-5 ms-5 position-absolute">
+      <h4 class="mt-3 mb-3">Rohit Sharma</h4>
+      <p class="fw-bold"><i class="fa fa-phone-square me-3" aria-hidden="true"></i>+91 9876543210</p>
+      <p class="fw-bold"><i class="fa fa-envelope me-3" aria-hidden="true"></i></i>rohitsharma@gmail.com</p>
+    </div>
+    <hr>
+  </div>
+
+  <div class="container">
+    <div class="summary">
+      <h2>Professional Summary</h2>
+      <ul>
+        <li>Having 1 years of experience in developing single page Web Applications using <span>ReactJS,</span> HTML5,
+          CSS3, Booststrap5, JavaScript, TypeScript</li>
+        <li>Experience on working with version control system-GIT anf GitHub</li>
+        <li>Experience working with JIRA for user stories and bug tracking</li>
+        <li>Strong Debugging & Troubleshooting code experience using Chrome Developer Tool</li>
+        <li>Working exposure on ID's like VS Code and Notepad++</li>
+        <li>Good Working experience under Agile methodologies environment</li>
+        <li>Experience in using Chrome Developer Tool for debugging and Troublshooting the code</li>
+        <li>Knowledge of NodeJS</li>
+        <li>Ability to work with people at all levels in the program</li>
+      </ul>
+    </div>
+    <hr>
+  </div>
+
+  <div class="container">
+    <div class="techStack" id="techStackSection">
+      <h3>Technology Stack for ReactJS Web Development</h3>
+      <table class="table table-striped table-bordered table-dark table-hover table-group-divider text-center">
+        <thead>
+
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="5"><strong>Technology</strong></td>
+            <td>HTML5</td>
+          </tr>
+          <tr>
+            <td>BootStrap</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+          </tr>
+          <tr>
+            <td>TypeScript</td>
+          </tr>
+          <tr>
+            <td>ReactJS</td>
+          </tr>
+          <tr>
+            <td rowspan="2"><strong>Tools</strong></td>
+            <td>Git + GitHub</td>
+          </tr>
+          <tr>
+            <td>Agile + Gira</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <hr>
+  </div>
+
+  <div class="container ">
+    <div class="education" id="educationDetails">
+      <h3>My Educational Details</h3>
+      <table class="table table-striped table-bordered table-dark table-hover table-group-divider text-center">
+        <thead>
+          <th>Qualification</th>
+          <th>School/College</th>
+          <th>Board/University</th>
+          <th>Year</th>
+          <th>Percentage</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>BE</td>
+            <td>CSMIT, Shedung, Panvel</td>
+            <td>Mumbai</td>
+            <td>2019</td>
+            <td>61.27%</td>
+          </tr>
+          <tr>
+            <td>Diploma</td>
+            <td>VJIT, Matunga, Mumbai</td>
+            <td>Autonoumous</td>
+            <td>2016</td>
+            <td>72.29</td>
+          </tr>
+          <tr>
+            <td>SSC</td>
+            <td>DVS High School, KoparKhairane, Navi Mumbai</td>
+            <td>State Board</td>
+            <td>2013</td>
+            <td>90.73%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <hr>
+  </div>
+
+  <div class="container">
+    <div class="project" id="projects">
+      <h3>Projects</h3>
+    </div><hr>
+  </div>
+
+  <div class="container">
+    <div class="personal" id="personalInfo">
+      <h3>Personal Details</h3>
+      <div class="personalInfo">
+        <Span><strong>Name:</strong> Rohit Sharma</Span>
+        <p><strong>Mobile Number:</strong> 9900885066</p>
+        <p><strong>Email:</strong> rohitsharma@gmail.com</p>
+        <p><strong>Date of Birth:</strong> Feb-19-2004</p>
+        <p><strong>Address:</strong> OM Vrindawan Colony, Pune</p>
+        <details>
+          <summary><strong>Family Details</strong></summary>
+          <ul>
+            <li>Father Name: Taraka Sharma</li>
+            <li>Mother Name : Manika Sharma</li>
+          </ul>
+        </details>
+        <h4>Achivement</h4>
+        <ul>
+          <li>I got II nd Prize in Technical Quiz organized by Sinhgad Institute of technology</li>
+          <li>Got Ist prize in Paper presentation organized by Sinhgad Institute of technology</li>
+        </ul>
+        <h4>Hobbies</h4>
+        <ul>
+          <li>Programming</li>
+          <li>Travelling</li>
+          <li>Watching Movies</li>
+          <li>Music Listening</li>
+        </ul>
+      </div>
+    </div><hr>
+  </div>
+
+  <div class="container" >
+    <footer class="bg-dark text-center text-white">
+      <section class="d-flex justify-content-center justify-content-lg-between p-2 border-bottom">
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with me on social networks:</span>
+        </div>
+        <div>
+          <a href="https://www.facebook.com/" target="_blank" class="btn btn-outline-light btn-floating m-1 me-4 text-reset"><i class="fa fa-facebook-f"></i></a>
+          <a href="https://twitter.com/" target="_blank" class="btn btn-outline-light btn-floating m-1 me-4 text-reset"><i class="fab fa fa-twitter"></i></a>
+          <a href="https://www.google.com/" class="btn btn-outline-light btn-floating m-1 me-4 text-reset"><i class="fab fa fa-google"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" class="btn btn-outline-light btn-floating m-1 me-4 text-reset"><i class="fab fa fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/" target="_blank" class="btn btn-outline-light btn-floating m-1 me-4 text-reset"><i class="fab fa fa-linkedin"></i></a>
+          <a href="https://github.com/" target="_blank" class="btn btn-outline-light btn-floating m-1 me-4 text-reset"><i class="fab fa fa-github"></i></a>
+        </div>
+      </section>
+    </footer>
+  </div>
+  
+</body>
+
 </html>
